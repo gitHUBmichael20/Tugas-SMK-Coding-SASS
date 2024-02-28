@@ -27,9 +27,7 @@ span {
     top: 20vh;
     width: 100%;
     min-height: 60vh;
-    background-image: url(asset/Cafe-Street/Images/bg-aboutus.png);
-    background-color: $cream;
-    background-blend-mode: soft-light;
+    background-image: url(asset/Cafe-Street/Images/bg-image.svg); 
     background-size: cover;
     display: flex;
 
@@ -134,18 +132,19 @@ span {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: 6%;
+          margin-top: 5%;
 
           .rating {
             display: flex;
             justify-content: center;
+            align-items: center;
             background: white;
             border-radius: 20px;
             padding: 0 20px;
             box-shadow: 0px 0px 0px 5px rgba(145, 145, 145, 0.5);            position: absolute;
-            top: 9%;
-            left: 12%;
-            width: 13%;
+            top: 8%;
+            left: 9%;
+            width: 9%;
             height: 26px;
 
             img {
@@ -153,13 +152,13 @@ span {
             }
 
             p {
-              font-size: 17px;
+              font-size: 15px;
               font-weight: 700;
             }
           }
 
           .card-img-top {
-            width: 86%;
+            width: 89%;
             border-radius: 7%;
           }
         }
