@@ -1,0 +1,218 @@
+@import url("https:fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
+$myFont: "Poppins";
+$orange: #ff902a;
+$dark-brown: #2f2105;
+$secondFontColor: rgba(102, 94, 94, 0.771);
+$cream: #f9d9aa;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: $myFont;
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-color: $orange;
+  text-underline-offset: 5px;
+}
+
+.pages-about {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+
+  .section-about {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(asset/Cafe-Street/Images/bg-aboutus.png);
+    background-color: $cream;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    display: flex;
+
+    .img-highlight {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        width: 310px;
+        bottom: 9%;
+        position: absolute;  
+        box-shadow: 0px 0px 3px 8px rgba(248, 248, 248, 0.8);
+        border-radius: 5px;
+      }
+    }
+
+    .about-element {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+
+      .about-text {
+        h3 {
+          font-size: 2rem;
+        }
+
+        .paragraph-1 {
+          max-width: 290px;
+          font-weight: 600;
+          top: 35px;
+          margin-top: 25px;
+          font-size: 20px;
+        }
+        .paragraph-2 {
+          color: $secondFontColor;
+          font-weight: 500;
+          margin-top: 15px;
+          font-size: 15px;
+          max-width: 55%;
+        }
+      }
+
+      .get-coffe {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: $dark-brown;
+        color: $orange;
+        font-weight: 550;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.pages-menu {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  .menu-title {
+    position: relative;
+    margin-left: 30px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-left: 19px;
+    margin-bottom: 24px;
+  }
+
+  .catalog-coffee {
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    .list-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .card {
+        box-sizing: border-box;
+        width: 19rem;
+        border-radius: 10px;
+        border-width: 5px;
+        box-shadow: 0px 0px 10px rgba(145, 145, 145, 0.5);
+        margin: 1rem;
+        position: relative;
+        display: block;
+
+        .card-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 6%;
+
+          .rating {
+            display: flex;
+            justify-content: center;
+            background: white;
+            border-radius: 20px;
+            padding: 0 20px;
+            box-shadow: 0px 0px 0px 5px rgba(145, 145, 145, 0.5);            position: absolute;
+            top: 9%;
+            left: 12%;
+            width: 13%;
+            height: 26px;
+
+            img {
+              width: 20px;
+            }
+
+            p {
+              font-size: 17px;
+              font-weight: 700;
+            }
+          }
+
+          .card-img-top {
+            width: 86%;
+            border-radius: 7%;
+          }
+        }
+
+        .card-body {
+          padding: 1rem;
+
+          .title-price {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .card-title {
+              margin-top: 0;
+              margin-bottom: 0.5rem;
+              font-size: 22px;
+              font-weight: 550;
+            }
+          }
+
+          .card-text {
+            margin-bottom: 1rem;
+          }
+
+          .about-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+              font-size: 15px;
+              color: rgba(102, 94, 94, 0.771);
+              font-weight: 500;
+              padding-right: 20px;
+            }
+
+            .btn-card {
+              min-width: 35px;
+              height: 35px;
+              overflow: hidden;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $orange;
+
+              img {
+                width: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
