@@ -11,6 +11,12 @@ span {
   text-underline-offset: 5px;
 }
 
+h2 {
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: 0.05rem;
+}
+
 .pages-about {
   position: relative;
   width: 100%;
@@ -21,40 +27,40 @@ span {
   top: 20vh;
   width: 100%;
   min-height: 60vh;
-  background-image: url(asset/Cafe-Street/Images/bg-image.svg);
+  background-image: url(asset/Cafe-Street/Images/bg-aboutus.png);
+  background-color: rgb(247, 235, 218);
+  background-blend-mode: soft-light;
   background-size: cover;
   display: flex;
 }
 .pages-about .section-about .img-highlight {
   width: 50%;
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 .pages-about .section-about .img-highlight img {
+  position: absolute;
+  box-shadow: 0px 0px 0px 8px rgba(248, 248, 248, 0.909);
+  border-radius: 15px;
   width: 310px;
   bottom: 9%;
-  position: absolute;
-  box-shadow: 0px 0px 3px 8px rgba(248, 248, 248, 0.8);
-  border-radius: 5px;
 }
 .pages-about .section-about .about-element {
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   width: 50%;
 }
-.pages-about .section-about .about-element .about-text h3 {
-  font-size: 2rem;
-}
-.pages-about .section-about .about-element .about-text .paragraph-1 {
+.pages-about .section-about .about-element .paragraph-1 {
   max-width: 290px;
   font-weight: 600;
   top: 35px;
   margin-top: 25px;
   font-size: 20px;
 }
-.pages-about .section-about .about-element .about-text .paragraph-2 {
+.pages-about .section-about .about-element .paragraph-2 {
   color: rgba(102, 94, 94, 0.771);
   font-weight: 500;
   margin-top: 15px;
@@ -62,14 +68,14 @@ span {
   max-width: 55%;
 }
 .pages-about .section-about .about-element .get-coffe {
-  width: 150px;
-  height: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  justify-content: center;
   background-color: #2f2105;
   color: #ff902a;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
   font-weight: 550;
   margin-top: 20px;
 }
@@ -77,30 +83,23 @@ span {
 .pages-menu {
   width: 100%;
   height: auto;
-  position: relative;
 }
 .pages-menu .menu-title {
-  position: relative;
-  margin-left: 30px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  margin-left: 19px;
-  margin-bottom: 24px;
+  margin-left: 180px;
+  margin-bottom: 50px;
 }
 .pages-menu .catalog-coffee {
   width: 100%;
   height: 100%;
-  margin-top: 90px;
-  gap: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 90px;
 }
 .pages-menu .catalog-coffee .list-item {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .pages-menu .catalog-coffee .list-item .card {
   box-sizing: border-box;
@@ -110,27 +109,24 @@ span {
   box-shadow: 0px 0px 10px rgba(145, 145, 145, 0.5);
   margin: 1rem;
   position: relative;
-  display: block;
 }
 .pages-menu .catalog-coffee .list-item .card .card-img {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: 5%;
 }
 .pages-menu .catalog-coffee .list-item .card .card-img .rating {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: white;
   border-radius: 20px;
-  padding: 0 20px;
   box-shadow: 0px 0px 0px 5px rgba(145, 145, 145, 0.5);
   position: absolute;
   top: 8%;
   left: 9%;
-  width: 9%;
-  height: 26px;
+  width: 63px;
 }
 .pages-menu .catalog-coffee .list-item .card .card-img .rating img {
   width: 20px;
